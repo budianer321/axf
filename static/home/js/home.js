@@ -11,7 +11,7 @@ $(function () {
         centeredSlides: true,
         autoplay: 2500,
         autoplayDisableOnInteraction: false,
-        loop: true
+        loop: true  //重复轮拨
     });
 
 
