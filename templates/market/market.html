@@ -19,7 +19,7 @@
                 {% for foodtype in foodtypes %}
                     <li class="type-item">
                         <span></span>
-                        <a href="{% url 'axf:market' foodtype.typeid 0 0 %}">
+                        <a href="{% url 'APP:market' foodtype.typeid 0 0 %}">
                             {{ foodtype.typename }}
                         </a>
                     </li>
@@ -87,7 +87,7 @@
         <div class="bounce-view category-view">
             <div class="bounce-wrapper">
                 {% for child in childTypleList %}
-                    <a href="{% url 'axf:market' categoryid child.childid 0 %}">
+                    <a href="{% url 'App:market' categoryid child.childid 0 %}">
                         {{ child.childname }}
                     </a>
                 {% endfor %}
@@ -96,10 +96,10 @@
 {#            排序#}
         <div class="bounce-view sort-view">
             <div class="bounce-wrapper">
-                <a href="{% url 'axf:market' categoryid childid 0 %}">综合排序</a>
-                <a href="{% url 'axf:market' categoryid childid 1 %}">销量排序</a>
-                <a href="{% url 'axf:market' categoryid childid 2 %}">价格最低</a>
-                <a href="{% url 'axf:market' categoryid childid 3 %}">价格最高</a>
+                <a href="{% url 'App:market' categoryid childid 0 %}">综合排序</a>
+                <a href="{% url 'App:market' categoryid childid 1 %}">销量排序</a>
+                <a href="{% url 'App:market' categoryid childid 2 %}">价格最低</a>
+                <a href="{% url 'App:market' categoryid childid 3 %}">价格最高</a>
             </div>
         </div>
         </div>

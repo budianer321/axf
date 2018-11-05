@@ -2,7 +2,7 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 # Create your views here.
-from App.models import Wheel, Nav, Mustbuy, MainShow, Shop
+from App.models import Wheel, Nav, Mustbuy, MainShow, Shop, Goods, Foodtypes
 
 
 def home(request):  # 首页
@@ -32,8 +32,8 @@ def home(request):  # 首页
     # return HttpResponse('aaa')
 
 
-def market(request):    # 闪购超市
-    return render(request, 'market/market.html')
+# def market(request):    # 闪购超市
+#     return render(request, 'market/market.html')
 
 
 def cart(request):  # 购物车
@@ -90,3 +90,7 @@ def market(request, categoryid, childid, sortid):    # 闪购超市
 
 def base(request):
     return render(request, 'base/base.html')
+
+
+def mine(request):
+    return None
